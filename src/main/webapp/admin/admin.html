@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<button type="button" class="btn btn-secondary" onclick="getGroup(0)">Grupo 1</button>
+			<button type="button" class="btn btn-secondary" onclick="getGroup(1)">Grupo 2</button>
+			<button type="button" class="btn btn-secondary" onclick="getGroup(2)">Grupo 3</button>
+			<button type="button" class="btn btn-secondary" onclick="getGroup(3)">Grupo 4</button>
+			<button type="button" class="btn btn-secondary" onclick="getGroup(4)">Quartas</button>
+			<button type="button" class="btn btn-secondary" onclick="getGroup(5)">Semifinal</button>
+			<button type="button" class="btn btn-secondary" onclick="getGroup(6)">Terceiro
+				Lugar</button>
+			<button type="button" class="btn btn-secondary" onclick="getGroup(7)">Final</button>
+		</div>
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<button type="button" class="btn btn-secondary" onclick="changeCamera(0)">Camera 1</button>
+			<button type="button" class="btn btn-secondary" onclick="changeCamera(1)">Camera 2</button>
+		</div>
+
+		<h2><span id="currentGroup"></span></h2>
+
+		<table class="table" id="currentGroupTable">
+			<thead>
+				<tr>
+					<th scope="col">Jogo</th>
+					<th scope="col">Time 1</th>
+					<th scope="col">Placar</th>
+					<th scope="col">Time 2</th>
+					<th scope="col">Ações</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+		
+		<button id="groupEnd" type="button" class="btn btn-primary" onclick="endGroup()">Finalizar Grupo</button>
+
+	</div>
+	<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="admin.js"></script>
+</body>
+</html>
+
+
+
